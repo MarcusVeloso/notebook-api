@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
   def index
     @contacts = Contact.all
 
-    render json: @contacts, status: :unprocessable_entity
+    render json: @contacts.map { |contact| contact.attributes.merge({ author: "Veloso"})}
   end
 
   # GET /contacts/1
