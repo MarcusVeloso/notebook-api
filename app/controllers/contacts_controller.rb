@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1
   def show
-    render json: @contact.to_br #{name: @contact.name, birthdate: (I18n.l(@contact.birthdate) unless @contact.birthdate.blank?) } #, include: :kind
+    render json: @contact#, include: :kind #{name: @contact.name, birthdate: (I18n.l(@contact.birthdate) unless @contact.birthdate.blank?) } #, include: :kind
   end
 
   # POST /contacts
