@@ -32,6 +32,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # A library for generating fake data such as names, addresses, and phone numbers. 
   gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+  # Rails >= 3 pry initializer
+  gem 'pry-rails'
 end
 
 group :development do
